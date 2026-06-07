@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    body{
+        background : linear-gradient(to top,#0f1c52,  #050218);
+    }
+</style>
+</head>
+<body class="bg-slate-950 text-white" >
+    <img class=" mix-blend-screen drop-shadow-[2px_2px_30px_45px_yellow]" src="/tailwind/dist/realistic-digital-lens-flare-light-effect-free-png.webp" alt="">
+<div class="flex h-screen w-auto justify-center ">
+    <form class="space-y-5 w-96 flex flex-col justify-center  mb-30 p-2">
+        <label class="font-bold" >Email</label>
+        <input class=" w-full mb-7 border focus:outline-none focus:shadow-[2px_2px_30px_15px_blue] focus:ring-2 ring-indigo-500 rounded  p-2 " type="email" placeholder="Enter you email">
+        <label class="font-bold" >Password</label>
+        <input class=" w-full border mb-7 focus:outline-none focus:shadow-[0_0_30px_15px_blue] rounded focus:ring-2 ring-indigo-500 p-2" type="password" placeholder="Enter you password">
+        <button id="btn"  class="p-2 w-20  hover:border-amber-300 hover:rounded-xl hover:shadow-[0_0_25px_5px_yellow]  text-md bg-amber-400 rounded text-white" >Sign up</button>
+      <div id="succ"  class="hidden text-green-400 text-center mt-4 font-bold">✅ YOUR FORM IS SUCCESFULLY SUMBITTED</div>
+    </form>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById('btn');
+    let succ = document.getElementById("succ");
+    btn.addEventListener("click", (e)=>{
+        e.preventDefault();
+       succ.classList.remove('hidden');
+       succ.classList.add('animate-bounce');
+       setTimeout(() => {
+        succ.classList.remove('animate-bounce');
+       succ.classList.add('hidden');
+       }, 7000);
+    })
+</script>
+</html>

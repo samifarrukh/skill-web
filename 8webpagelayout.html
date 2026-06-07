@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-white" >
+    <nav class="w-full flex mb-4 items-center justify-between px-4 h-14 md:px-5 ">
+        <div class="text-2xl font-bold  text-indigo-700" >Sami webs</div>
+        <ul class=" md:flex md:gap-6 font-medium hidden">
+            <li class="cursor-pointer" >Home</li>
+            <li class="cursor-pointer" >About Us</li>
+            <li class="cursor-pointer" >Contact</li>
+        </ul>
+        <button id="login" class="hidden md:block px-2 py-2 hover:scale-115 transition hover:bg-blue-900 bg-indigo-700 rounded-2xl font-bold cursor-pointer">Login / Sign</button>
+        <div class="md:hidden ">
+            <a class="text-4xl" href="#">&#8801;</a>
+        </div>
+    </nav>
+    <header class="w-full h-auto">
+        <img  class="w-full rounded-xl" src="carouselOne.jpg" alt="">
+    <div class="h-auto w-full flex flex-wrap
+     flex-col items-center text-cneter p-10">
+    <div class="w-full h-auto flex flex-wrap
+     flex-col items-center  ">
+        <p class="text-indigo-600 mt-9 font-bold text-2xl md:text-3xl">"Pure Hardwork, No Shortcuts!"</p>
+        <div class="w-100 h-1 md:mt-3.5 md:mb-20 mb-8 rounded-2xl mt-2 border-b-4 border-amber-400"></div>
+    </div>
+    <div class="w-full  mt-10 mb:mb-15 mb-10 flex flex-wrap justify-around" >
+       <div class="w-70 h-80 flex flex-col items-center mt-3 mb-5 hover:scale-115 hover:border-4 hover:border-indigo-600 hover:rounded-2xl hover:shadow-[0_0_30px_15px_indigo] ">
+        <img class="w-48 h-48"  src="https://my-pwskills.netlify.app/assets/image/hard1.svg" alt="">
+        <p class="text-3xl  font-bold ">600+</p>
+        <p class="text-2xl text-center w-64 font-bold text-gray-500">Different Courses</p>
+       </div>
+       <div class="w-70 h-80 flex mr-10 flex-wrap ml-12 flex-col text-center items-center hover:scale-115 mb-5 hover:border-4 hover:border-indigo-600 hover:rounded-2xl hover:shadow-[0_0_30px_15px_indigo] ">
+        <img class="w-52  h-52" src="https://my-pwskills.netlify.app/assets/image/hard2.svg" alt="">
+        <p class="text-3xl font-bold" >700,000+</p>
+        <p class="text-2xl   font-bold text-gray-500 " >Students Enrolled</p>
+       </div>
+       <div class="w-70 h-80 flex flex-wrap flex-col mt-3 items-center mb-5 hover:scale-115 hover:border-4 hover:border-indigo-600 hover:rounded-2xl hover:shadow-[0_0_30px_15px_indigo] ">
+        <img class="w-48 h-48" src="https://my-pwskills.netlify.app/assets/image/hard3.svg" alt="">
+        <p class="text-3xl font-bold">10,000+</p>
+        <p class="text-2xl text-center w-64 font-bold text-gray-500" >Successful Transition</p>
+       </div>
+    </div>
+    </div>
+    <!-- our product section start here -->
+     <div class="h-auto w-full flex flex-wrap flex-col
+     items-center text-center p-10"  >
+    <div class="w-full h-auto flex flex-wrap flex-col
+    items-center">
+    <p class="text-indigo-800 font-bold text-3xl 
+    md:text-4xl text-center " >Our product</p>
+    <div class="w-36 h-1 border-b-4 border-amber-400 mt-2 rounded-2xl md:mt-3.5 mb-14 "></div>
+    <div class="w-[90%] h-auto flex flex-wrap justify-around" >
+        <div class="w-64 flex flex-col items-center mb-12  hover:border-amber-300 hover:border-4 hover:rounded-3xl hover:shadow-[0_0_25px_5px_yellow] transition-normal p-2">
+            <img class="w-64 h-44" src="https://my-pwskills.netlify.app/assets/image/product1.svg" alt="">
+            <p class="text-3xl font-bold ">PW Skills lab</p>
+            <p class="text-xl mt-2 font-bold text-gray-500 ">Supercharge your porject development with our robust lab.</p>
+        </div>
+        <div class="w-64 h-auto flex flex-col items-center mb-12 hover:border-4 hover:border-amber-300 hover:rounded-3xl hover:shadow-[0_0_25px_5px_yellow] transition-normal p-2" >
+            <img class="w-64 h-44" src="https://my-pwskills.netlify.app/assets/image/product2.svg" alt="">
+            <p class="text-3xl font-bold" >Job Protal</p>
+            <p class="text-xl font-bold text-gray-500" >Use exceptional templates for a stand-out resume minus the sign up process.</p>
+        </div>
+        <div  class="w-80 h-auto flex flex-col items-center mb-12 hover:border-4 hover:border-amber-300 hover:rounded-3xl hover:shadow-[0_0_25px_5px_yellow] transition-normal p-2" >
+            <img class="w-64 h-44" src="https://my-pwskills.netlify.app/assets/image/product3.svg" alt="">
+            <p class="text-3xl font-bold " >Experience Protal</p>
+            <p class="text-xl font-bold text-gray-500" >PW Skills's self-paced experience portal prioritises hands-on training with 570+ internship projects.</p>
+        </div>
+        <div class="w-70 h-auto flex flex-col items-center mb-12  hover:border-4 hover:border-amber-300 hover:rounded-3xl hover:shadow-[0_0_25px_5px_yellow] transition-normal p-2" >
+            <img class="w-64 h-44" src="https://my-pwskills.netlify.app/assets/image/product4.svg" alt="">
+            <p class="text-3xl font-bold" >Become an affliate</p>
+            <p class="text-xl font-bold text-gray-500 ">Explore affiliate marketing opportunities with PW Skills and attain financial freedom.</p>
+        </div>
+        <div class="w-64 h-auto flex flex-col items-center mb-12 hover:border-4 hover:border-amber-300 hover:rounded-3xl hover:shadow-[0_0_25px_5px_yellow] transition-normal p-2" >
+            <img src="https://my-pwskills.netlify.app/assets/image/product5.svg" alt="">
+            <p class="text-3xl font-bold">Hall of fame</p>
+            <p class="text-xl font-bold text-gray-500 ">Our student placements and 100K+ career transitions speak volumes about our courses.</p>
+        </div>
+    </div>
+    </div>
+    <!-- our footer start here  -->
+     <footer class="w-full bg-gray-900 px-4 pt-8 flex flex-row
+      flex-wrap justify-between rounded-2xl md:px-12">
+      <div >
+        <img class="w-48 h-16" src="https://my-pwskills.netlify.app/assets/image/light-logo.png" alt="">
+        <p class="my-4">Email us: support@pwskills.com</p>
+        <img class="w-32 h-32" src="https://my-pwskills.netlify.app/assets/image/iso-logo.svg" alt="">
+      </div>
+     
+        <div >
+            <h2 class="font-bold text-xl mt-4" >PW Skills</h2>
+            <div class="w-28 ml-3.5  h-1 border-b-2 border-yellow-400 rounded-2xl my-2" ></div>
+            <div class=" text-sm">
+            <p>About US</p>
+            <p>FAQs</p>
+            <p>Privacy Policy</p>
+            <p>Job assistance</p>
+            <p>Terms and conditions</p>
+            </div>
+        </div>
+         <div class="">
+            <h2 class="font-bold text-xl mt-4" >PW Skills</h2>
+            <div class="w-28 ml-3.5  h-1 border-b-2 border-yellow-400 rounded-2xl my-2" ></div>
+             <div class=" text-sm">
+            <p>PW Skills Lab</p>
+            <p>Job Portal</p>
+            <p>Experience portal</p>
+            <p>Become an affiliate</p>
+            <p>Hall of fame</p>
+            </div>
+        </div>
+         <div class="">
+            <h2 class="font-bold text-xl mt-4" >PW Skills</h2>
+            <div class="w-28 ml-3.5  h-1 border-b-2 border-yellow-400 rounded-2xl my-2" ></div>
+            <div class=" text-sm">
+            <p>Students</p>
+            <p>Our Community</p>
+            <p>Guidlines</p>
+            <p>Fees Structure</p>
+            <p>Achievement</p>
+            </div>
+        </div>
+     
+     </footer>
+</div>
+<script>
+    let login = document.getElementById('login');
+    login.addEventListener('click',()=>{
+            window.location.href = "9loginform.html"
+    });
+</script>
+</body>
+</html>
